@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">trabalhofinalprogmobile</string>
+    <string name="entrar">Entrar</string>
+    <string name="cadastro">Criar conta</string>
+    <string name="entrar_tela_inicial">Entrar</string>
+    <string name="titulo_cadastro">Cadastre-se</string>
 </resources>
