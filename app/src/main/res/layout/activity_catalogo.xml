@@ -30,7 +30,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+         />
 
     <TextView
         android:id="@+id/textView"
@@ -44,7 +44,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@+id/cappuccino"
         app:layout_constraintTop_toBottomOf="@+id/cappuccino"
-        tools:ignore="MissingConstraints" />
+         />
 
     <ImageView
         android:id="@+id/expresso"
@@ -69,7 +69,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/expresso"
-        tools:ignore="MissingConstraints" />
+         />
 
     <ImageView
         android:id="@+id/cafe_leite"
@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cafe_leite"
-        tools:ignore="MissingConstraints" />
+         />
 
     <ImageView
         android:id="@+id/cafe_forte"
@@ -123,7 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/cafe_forte"
-        tools:ignore="MissingConstraints" />
+         />
 
     <ImageView
         android:id="@+id/cafe_frappe"
@@ -150,7 +150,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cafe_frappe"
-        tools:ignore="MissingConstraints" />
+         />
 
     <ImageView
         android:id="@+id/cafe_irlandes"
@@ -177,7 +177,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/cafe_irlandes"
-        tools:ignore="MissingConstraints" />
+        />
 
     <Button
         android:id="@+id/botao_manual_cafe"
@@ -197,7 +197,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+         />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
