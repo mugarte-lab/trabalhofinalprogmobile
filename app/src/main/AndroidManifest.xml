@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trabalhofinalprogmobile">
         <activity
+            android:name=".Infografico"
+            android:exported="false" />
+        <activity
+            android:name=".Catalogo"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity android:name=".TelaPrincipal" />

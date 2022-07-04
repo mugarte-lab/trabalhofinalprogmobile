@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529126753921",
+    "project_id": "trabalho-final-progmobile",
+    "storage_bucket": "trabalho-final-progmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529126753921:android:b06f5b7f3a6804acdeaf80",
+        "android_client_info": {
+          "package_name": "com.example.trabalhofinalprogmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529126753921-jf18khq4fsilodi80qi6357u53tjmghj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOhJp68xbT0o1ayiuXkJQ11IoblwQm0LU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529126753921-jf18khq4fsilodi80qi6357u53tjmghj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

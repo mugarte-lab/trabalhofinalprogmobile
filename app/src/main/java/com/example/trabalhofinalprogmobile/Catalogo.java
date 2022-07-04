@@ -5,34 +5,38 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
 
-    
+public class Catalogo extends AppCompatActivity {
 
-    private TextView text_tela_inicial;
+    private Button botao_manual_cafe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_catalogo);
 
         getSupportActionBar().hide();
         IniciarComponentes();
 
-        text_tela_inicial.setOnClickListener(new View.OnClickListener() {
+        botao_manual_cafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(MainActivity.this, Login.class);
+                Intent intent = new Intent(Catalogo.this, Infografico.class);
                 startActivity(intent);
+                finish();
             }
         });
-
     }
 
-    private void IniciarComponentes(){
-        text_tela_inicial = findViewById(R.id.botao_tela_inicial);
+    private void IniciarComponentes() {
+
+        botao_manual_cafe = findViewById(R.id.botao_manual_cafe);
+
+        }
+
     }
-}
