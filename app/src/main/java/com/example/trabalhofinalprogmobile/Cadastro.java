@@ -23,6 +23,8 @@ import com.google.firebase.auth.FirebaseAuthWeakPasswordException;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -113,11 +115,13 @@ public class Cadastro extends AppCompatActivity {
 
     private void SalvarDadosUsuario(){
         String nome = edit_nome.getText().toString();
+        String senha = edit_senha.getText().toString();
 
         FirebaseFirestore dataBase = FirebaseFirestore.getInstance();
 
         Map<String, Object> usuarios = new HashMap<>();
         usuarios.put("nome", nome);
+        usuarios.put("senha", criptografia(senha));
 
         usuarioID = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
@@ -137,6 +141,31 @@ public class Cadastro extends AppCompatActivity {
 
                     }
                 });
+    }
+    public String criptografia(String senha) {
+        String generatedPassword = null;
+        try {
+            // Create MessageDigest instance for MD5
+            MessageDigest md = MessageDigest.getInstance("MD5");
+
+            // Add password bytes to digest
+            md.update(senha.getBytes());
+
+            // Get the hash's bytes
+            byte[] bytes = md.digest();
+
+            // This bytes[] has bytes in decimal format. Convert it to hexadecimal format
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < bytes.length; i++) {
+                sb.append(Integer.toString((bytes[i] & 0xff) + 0x100, 16).substring(1));
+            }
+
+            // Get complete hashed password in hex format
+            generatedPassword = sb.toString();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return generatedPassword;
     }
 
     private void IniciarComponentes(){
